@@ -1,0 +1,17 @@
+version: 0.2
+
+plases:
+  install:
+    commands:
+      - echo "Installing dependencies..."
+  build:
+    commands:
+      - echo "Build step..."
+  post_build:
+    commands:
+      - echo "Deploying to S3..."
+      - aws s3 cp index.html s3://myfrontendsite11/index.html
+
+artifacts:
+  files:
+    - index.html
