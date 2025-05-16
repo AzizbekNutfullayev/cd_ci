@@ -10,7 +10,7 @@ plases:
   post_build:
     commands:
       - echo "Deploying to S3..."
-      - aws s3 cp index.html s3://myfrontendsite11/index.html
+      - aws s3 cp index.html s3://  index.html
 
 artifacts:
   files:
